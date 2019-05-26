@@ -1,0 +1,1 @@
+/usr/bin/g++-5      CMakeFiles/{PROJECT_NAME}.dir/main.cpp.o  -o {PROJECT_NAME} -rdynamic 
