@@ -16,3 +16,7 @@ target_link_libraries(ceres_demo1 ${CERES_LIBRARIES})
 add_executable(ceres_demo2 src/ceres_demo2.cpp)
 #execute with ceres library
 target_link_libraries(ceres_demo2 ${CERES_LIBRARIES})
+
+add_executable(ceres_demo3 src/ceres_demo3.cpp)
+#execute with ceres library
+target_link_libraries(ceres_demo3 ${CERES_LIBRARIES})

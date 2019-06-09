@@ -1,3 +1,11 @@
+/******* NOTE *******
+Purpose: ceres solver study
+Project: demo1 <automatic derivation>
+Goal:    learn ceres-solver how to work and use automatic derivation.
+Author:  KDQ
+Date:    2019/6/1
+*********************/
+
 #include <iostream>
 #include "ceres/ceres.h"
 using namespace std;
@@ -10,8 +18,6 @@ struct CostFunctor {
      return true;
    }
 };
-
-
 
 int main(int argc, char** argv) {
   google::InitGoogleLogging(argv[0]);

@@ -60,4 +60,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ceres_demo1.dir/DependInfo.cmake"
+  "CMakeFiles/ceres_demo3.dir/DependInfo.cmake"
+  "CMakeFiles/ceres_demo2.dir/DependInfo.cmake"
   )
