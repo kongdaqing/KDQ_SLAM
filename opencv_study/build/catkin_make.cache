@@ -1,0 +1,2 @@
+capture_camera:feature_detector
+-DCATKIN_DEVEL_PREFIX=/home/kdq/workspace/KDQ_SLAM/opencv_study/devel -DCMAKE_INSTALL_PREFIX=/home/kdq/workspace/KDQ_SLAM/opencv_study/install -G Unix Makefiles
