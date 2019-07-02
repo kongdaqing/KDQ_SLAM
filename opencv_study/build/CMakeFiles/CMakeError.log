@@ -1,22 +1,20 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b499b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b499b.dir/build.make CMakeFiles/cmTC_b499b.dir/build
-make[1]: Entering directory '/home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b499b.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_b499b.dir/CheckSymbolExists.c.o   -c /home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_b499b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b499b.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_b499b.dir/CheckSymbolExists.c.o  -o cmTC_b499b -rdynamic 
-CMakeFiles/cmTC_b499b.dir/CheckSymbolExists.c.o：在函数‘main’中：
+Run Build Command:"/usr/bin/make" "cmTC_65bce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65bce.dir/build.make CMakeFiles/cmTC_65bce.dir/build
+make[1]: 正在进入目录 `/home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65bce.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_65bce.dir/CheckSymbolExists.c.o   -c /home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_65bce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65bce.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_65bce.dir/CheckSymbolExists.c.o  -o cmTC_65bce 
+CMakeFiles/cmTC_65bce.dir/CheckSymbolExists.c.o：在函数‘main’中：
 CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_b499b.dir/build.make:97: recipe for target 'cmTC_b499b' failed
-make[1]: *** [cmTC_b499b] Error 1
-make[1]: Leaving directory '/home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_b499b/fast' failed
-make: *** [cmTC_b499b/fast] Error 2
+make[1]: *** [cmTC_65bce] 错误 1
+make[1]:正在离开目录 `/home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_65bce/fast] 错误 2
 
 File /home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +34,18 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1675a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1675a.dir/build.make CMakeFiles/cmTC_1675a.dir/build
-make[1]: Entering directory '/home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1675a.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1675a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1675a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1675a.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_1675a.dir/CheckFunctionExists.c.o  -o cmTC_1675a -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_4e74f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e74f.dir/build.make CMakeFiles/cmTC_4e74f.dir/build
+make[1]: 正在进入目录 `/home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e74f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4e74f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4e74f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e74f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_4e74f.dir/CheckFunctionExists.c.o  -o cmTC_4e74f -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1675a.dir/build.make:97: recipe for target 'cmTC_1675a' failed
-make[1]: *** [cmTC_1675a] Error 1
-make[1]: Leaving directory '/home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_1675a/fast' failed
-make: *** [cmTC_1675a/fast] Error 2
+make[1]: *** [cmTC_4e74f] 错误 1
+make[1]:正在离开目录 `/home/kdq/workspace/KDQ_SLAM/opencv_study/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4e74f/fast] 错误 2
 
 

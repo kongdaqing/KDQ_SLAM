@@ -24,3 +24,9 @@ add_executable(harris_detector
     )
 
 target_link_libraries(harris_detector ${catkin_LIBRARIES} ${OpenCV_LIBS})
+
+add_executable(feature_detector_node
+    src/FeatureDetectorRos.cpp
+    src/featuredetector.cpp
+    )
+target_link_libraries(feature_detector_node ${catkin_LIBRARIES} ${OpenCV_LIBS})

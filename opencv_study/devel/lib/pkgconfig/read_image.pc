@@ -1,0 +1,8 @@
+prefix=/home/kdq/workspace/KDQ_SLAM/opencv_study/devel
+
+Name: read_image
+Description: Description of read_image
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kdq/workspace/KDQ_SLAM/opencv_study/devel/lib 
+Requires: 

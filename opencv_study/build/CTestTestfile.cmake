@@ -4,5 +4,7 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-subdirs(gtest)
-subdirs(feature_detector)
+subdirs("gtest")
+subdirs("capture_camera")
+subdirs("feature_detector")
+subdirs("read_images")
