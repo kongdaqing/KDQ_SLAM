@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/parallels/workspace/KDQ_SLAM/ceres_study/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -123,6 +123,32 @@ ceres_demo1/fast:
 	$(MAKE) -f CMakeFiles/ceres_demo1.dir/build.make CMakeFiles/ceres_demo1.dir/build
 .PHONY : ceres_demo1/fast
 
+#=============================================================================
+# Target rules for targets named ceres_demo3
+
+# Build rule for target.
+ceres_demo3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceres_demo3
+.PHONY : ceres_demo3
+
+# fast build rule for target.
+ceres_demo3/fast:
+	$(MAKE) -f CMakeFiles/ceres_demo3.dir/build.make CMakeFiles/ceres_demo3.dir/build
+.PHONY : ceres_demo3/fast
+
+#=============================================================================
+# Target rules for targets named ceres_demo2
+
+# Build rule for target.
+ceres_demo2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceres_demo2
+.PHONY : ceres_demo2
+
+# fast build rule for target.
+ceres_demo2/fast:
+	$(MAKE) -f CMakeFiles/ceres_demo2.dir/build.make CMakeFiles/ceres_demo2.dir/build
+.PHONY : ceres_demo2/fast
+
 src/ceres_demo1.o: src/ceres_demo1.cpp.o
 
 .PHONY : src/ceres_demo1.o
@@ -150,18 +176,80 @@ src/ceres_demo1.cpp.s:
 	$(MAKE) -f CMakeFiles/ceres_demo1.dir/build.make CMakeFiles/ceres_demo1.dir/src/ceres_demo1.cpp.s
 .PHONY : src/ceres_demo1.cpp.s
 
+src/ceres_demo2.o: src/ceres_demo2.cpp.o
+
+.PHONY : src/ceres_demo2.o
+
+# target to build an object file
+src/ceres_demo2.cpp.o:
+	$(MAKE) -f CMakeFiles/ceres_demo2.dir/build.make CMakeFiles/ceres_demo2.dir/src/ceres_demo2.cpp.o
+.PHONY : src/ceres_demo2.cpp.o
+
+src/ceres_demo2.i: src/ceres_demo2.cpp.i
+
+.PHONY : src/ceres_demo2.i
+
+# target to preprocess a source file
+src/ceres_demo2.cpp.i:
+	$(MAKE) -f CMakeFiles/ceres_demo2.dir/build.make CMakeFiles/ceres_demo2.dir/src/ceres_demo2.cpp.i
+.PHONY : src/ceres_demo2.cpp.i
+
+src/ceres_demo2.s: src/ceres_demo2.cpp.s
+
+.PHONY : src/ceres_demo2.s
+
+# target to generate assembly for a file
+src/ceres_demo2.cpp.s:
+	$(MAKE) -f CMakeFiles/ceres_demo2.dir/build.make CMakeFiles/ceres_demo2.dir/src/ceres_demo2.cpp.s
+.PHONY : src/ceres_demo2.cpp.s
+
+src/ceres_demo3.o: src/ceres_demo3.cpp.o
+
+.PHONY : src/ceres_demo3.o
+
+# target to build an object file
+src/ceres_demo3.cpp.o:
+	$(MAKE) -f CMakeFiles/ceres_demo3.dir/build.make CMakeFiles/ceres_demo3.dir/src/ceres_demo3.cpp.o
+.PHONY : src/ceres_demo3.cpp.o
+
+src/ceres_demo3.i: src/ceres_demo3.cpp.i
+
+.PHONY : src/ceres_demo3.i
+
+# target to preprocess a source file
+src/ceres_demo3.cpp.i:
+	$(MAKE) -f CMakeFiles/ceres_demo3.dir/build.make CMakeFiles/ceres_demo3.dir/src/ceres_demo3.cpp.i
+.PHONY : src/ceres_demo3.cpp.i
+
+src/ceres_demo3.s: src/ceres_demo3.cpp.s
+
+.PHONY : src/ceres_demo3.s
+
+# target to generate assembly for a file
+src/ceres_demo3.cpp.s:
+	$(MAKE) -f CMakeFiles/ceres_demo3.dir/build.make CMakeFiles/ceres_demo3.dir/src/ceres_demo3.cpp.s
+.PHONY : src/ceres_demo3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ceres_demo1"
+	@echo "... ceres_demo3"
+	@echo "... ceres_demo2"
+	@echo "... rebuild_cache"
 	@echo "... src/ceres_demo1.o"
 	@echo "... src/ceres_demo1.i"
 	@echo "... src/ceres_demo1.s"
+	@echo "... src/ceres_demo2.o"
+	@echo "... src/ceres_demo2.i"
+	@echo "... src/ceres_demo2.s"
+	@echo "... src/ceres_demo3.o"
+	@echo "... src/ceres_demo3.i"
+	@echo "... src/ceres_demo3.s"
 .PHONY : help
 
 

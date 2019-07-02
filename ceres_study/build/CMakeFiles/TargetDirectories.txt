@@ -1,3 +1,5 @@
-/home/parallels/workspace/KDQ_SLAM/ceres_study/build/CMakeFiles/rebuild_cache.dir
 /home/parallels/workspace/KDQ_SLAM/ceres_study/build/CMakeFiles/edit_cache.dir
 /home/parallels/workspace/KDQ_SLAM/ceres_study/build/CMakeFiles/ceres_demo1.dir
+/home/parallels/workspace/KDQ_SLAM/ceres_study/build/CMakeFiles/ceres_demo3.dir
+/home/parallels/workspace/KDQ_SLAM/ceres_study/build/CMakeFiles/ceres_demo2.dir
+/home/parallels/workspace/KDQ_SLAM/ceres_study/build/CMakeFiles/rebuild_cache.dir

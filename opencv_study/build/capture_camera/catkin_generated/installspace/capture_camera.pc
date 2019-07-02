@@ -1,0 +1,8 @@
+prefix=/home/kdq/workspace/KDQ_SLAM/opencv_study/install
+
+Name: capture_camera
+Description: Description of capture_camera
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kdq/workspace/KDQ_SLAM/opencv_study/install/lib 
+Requires: 
