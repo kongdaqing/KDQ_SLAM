@@ -1,0 +1,2 @@
+vins_stereo
+-DCATKIN_DEVEL_PREFIX=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/install -G Unix Makefiles

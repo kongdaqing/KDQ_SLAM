@@ -1,0 +1,8 @@
+prefix=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/install
+
+Name: vins_stereo
+Description: Description of vins_stereo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kdq/Workspace/KDQ_SLAM/catkin_ws/install/lib 
+Requires: 

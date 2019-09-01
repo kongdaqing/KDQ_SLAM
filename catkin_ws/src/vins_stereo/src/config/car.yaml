@@ -1,0 +1,8 @@
+%YAML:1.0
+
+
+imu_topic: "/imu0"
+left_image_topic:  "/cam0/image_raw"
+right_image_topic:  "/cam1/image_raw"
+
+
