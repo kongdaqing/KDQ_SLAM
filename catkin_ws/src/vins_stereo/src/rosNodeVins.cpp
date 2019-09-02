@@ -14,6 +14,8 @@ int main(int argc,char** argv)
    cout << "config_file: " <<  config_file << endl;
    parameters sysSetting(config_file);
 
+
+
    ros::shutdown();
    return 0;
 }
