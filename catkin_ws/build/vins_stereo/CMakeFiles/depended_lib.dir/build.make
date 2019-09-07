@@ -70,25 +70,89 @@ vins_stereo/CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.s"
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.cpp -o CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.s
 
+vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: vins_stereo/CMakeFiles/depended_lib.dir/flags.make
+vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o -c /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.cpp
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.i"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.cpp > CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.i
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.s"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.cpp -o CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.s
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o: vins_stereo/CMakeFiles/depended_lib.dir/flags.make
+vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o -c /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.cpp
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.i"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.cpp > CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.i
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.s"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.cpp -o CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.s
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o: vins_stereo/CMakeFiles/depended_lib.dir/flags.make
+vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o -c /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.cpp
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/depended_lib.dir/src/feature/feature.cpp.i"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.cpp > CMakeFiles/depended_lib.dir/src/feature/feature.cpp.i
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/depended_lib.dir/src/feature/feature.cpp.s"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.cpp -o CMakeFiles/depended_lib.dir/src/feature/feature.cpp.s
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.o: vins_stereo/CMakeFiles/depended_lib.dir/flags.make
+vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.o"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.o -c /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.cpp
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.i"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.cpp > CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.i
+
+vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.s"
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.cpp -o CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.s
+
 # Object files for target depended_lib
 depended_lib_OBJECTS = \
-"CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.o"
+"CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.o" \
+"CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o" \
+"CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o" \
+"CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o" \
+"CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.o"
 
 # External object files for target depended_lib
 depended_lib_EXTERNAL_OBJECTS =
 
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: vins_stereo/CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.o
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.o
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: vins_stereo/CMakeFiles/depended_lib.dir/build.make
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/libroscpp.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/librosconsole.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/libxmlrpcpp.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/librostime.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/libcpp_common.so
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
@@ -144,7 +208,7 @@ depended_lib_EXTERNAL_OBJECTS =
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so: vins_stereo/CMakeFiles/depended_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library /home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/libdepended_lib.so"
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/depended_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,5 +4,12 @@
 imu_topic: "/imu0"
 left_image_topic:  "/cam0/image_raw"
 right_image_topic:  "/cam1/image_raw"
+track_image_topic : "/track/image"
+
+stereo_enable:1
+feature_point_max_number:200
+feature_min_dist:0.1
+pub_track_image:1
 
 
+imageInfo_print_hz:5

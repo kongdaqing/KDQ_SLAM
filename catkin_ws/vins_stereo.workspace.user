@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.4.1, 2019-09-01T22:35:23. -->
+<!-- Written by QtCreator 4.4.1, 2019-09-07T14:56:16. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -104,7 +104,7 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
      <value type="QString">CMAKE_PREFIX_PATH=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel:/opt/ros/kinetic</value>
      <value type="QString">LD_LIBRARY_PATH=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu</value>
-     <value type="QString">PATH=/opt/ros/kinetic/bin:/home/kdq/.local/share/umake/bin:/home/kdq/bin:/home/kdq/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin</value>
+     <value type="QString">PATH=/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin</value>
      <value type="QString">PKG_CONFIG_PATH=/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig</value>
      <value type="QString">PWD=/home/kdq/Workspace/KDQ_SLAM/catkin_ws</value>
      <value type="QString">PYTHONPATH=/opt/ros/kinetic/lib/python2.7/dist-packages</value>

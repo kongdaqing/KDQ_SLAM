@@ -7,6 +7,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
 find_package(catkin REQUIRED COMPONENTS
     roscpp
+    cv_bridge
     )
 
 find_package(OpenCV REQUIRED)
@@ -15,6 +16,10 @@ catkin_package()
 include_directories(${catkin_INCLUDE_DIRS})
 
 add_library(depended_lib src/parameters/parameters.cpp
+    src/rosVinsInterface.cpp
+    src/vins_estimator/estimator.cpp
+    src/feature/feature.cpp
+    src/vinsInfoFollow.cpp
     )
 target_link_libraries(depended_lib ${catkin_LIBRARIES} ${OpenCV_LIBS})
 add_executable(vins_node src/rosNodeVins.cpp)

@@ -80,17 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -101,6 +90,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -183,6 +183,126 @@ vins_node/fast:
 .PHONY : vins_node/fast
 
 # Convenience name for target.
+vins_stereo/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : vins_stereo/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: vins_stereo/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make vins_stereo/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : vins_stereo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: vins_stereo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make vins_stereo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/depended_lib.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/depended_lib.dir/rule
+.PHONY : vins_stereo/CMakeFiles/depended_lib.dir/rule
+
+# Convenience name for target.
+depended_lib: vins_stereo/CMakeFiles/depended_lib.dir/rule
+
+.PHONY : depended_lib
+
+# fast build rule for target.
+depended_lib/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/build
+.PHONY : depended_lib/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : vins_stereo/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: vins_stereo/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make vins_stereo/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : vins_stereo/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: vins_stereo/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make vins_stereo/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : vins_stereo/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: vins_stereo/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make vins_stereo/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : vins_stereo/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: vins_stereo/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make vins_stereo/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : vins_stereo/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: vins_stereo/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make vins_stereo/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 vins_stereo/CMakeFiles/roscpp_generate_messages_py.dir/rule:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : vins_stereo/CMakeFiles/roscpp_generate_messages_py.dir/rule
@@ -213,6 +333,21 @@ roscpp_generate_messages_eus/fast:
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
+vins_stereo/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : vins_stereo/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: vins_stereo/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make vins_stereo/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
 vins_stereo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : vins_stereo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -241,6 +376,36 @@ rosgraph_msgs_generate_messages_cpp: vins_stereo/CMakeFiles/rosgraph_msgs_genera
 rosgraph_msgs_generate_messages_cpp/fast:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make vins_stereo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : vins_stereo/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: vins_stereo/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make vins_stereo/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+vins_stereo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : vins_stereo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: vins_stereo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make vins_stereo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 vins_stereo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
@@ -286,21 +451,6 @@ rosgraph_msgs_generate_messages_eus: vins_stereo/CMakeFiles/rosgraph_msgs_genera
 rosgraph_msgs_generate_messages_eus/fast:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make vins_stereo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-vins_stereo/CMakeFiles/depended_lib.dir/rule:
-	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/depended_lib.dir/rule
-.PHONY : vins_stereo/CMakeFiles/depended_lib.dir/rule
-
-# Convenience name for target.
-depended_lib: vins_stereo/CMakeFiles/depended_lib.dir/rule
-
-.PHONY : depended_lib
-
-# fast build rule for target.
-depended_lib/fast:
-	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/build
-.PHONY : depended_lib/fast
 
 # Convenience name for target.
 vins_stereo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
@@ -422,6 +572,33 @@ std_msgs_generate_messages_py/fast:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/std_msgs_generate_messages_py.dir/build.make vins_stereo/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/feature/feature.o: src/feature/feature.cpp.o
+
+.PHONY : src/feature/feature.o
+
+# target to build an object file
+src/feature/feature.cpp.o:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o
+.PHONY : src/feature/feature.cpp.o
+
+src/feature/feature.i: src/feature/feature.cpp.i
+
+.PHONY : src/feature/feature.i
+
+# target to preprocess a source file
+src/feature/feature.cpp.i:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.i
+.PHONY : src/feature/feature.cpp.i
+
+src/feature/feature.s: src/feature/feature.cpp.s
+
+.PHONY : src/feature/feature.s
+
+# target to generate assembly for a file
+src/feature/feature.cpp.s:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.s
+.PHONY : src/feature/feature.cpp.s
+
 src/parameters/parameters.o: src/parameters/parameters.cpp.o
 
 .PHONY : src/parameters/parameters.o
@@ -476,6 +653,87 @@ src/rosNodeVins.cpp.s:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/vins_node.dir/build.make vins_stereo/CMakeFiles/vins_node.dir/src/rosNodeVins.cpp.s
 .PHONY : src/rosNodeVins.cpp.s
 
+src/rosVinsInterface.o: src/rosVinsInterface.cpp.o
+
+.PHONY : src/rosVinsInterface.o
+
+# target to build an object file
+src/rosVinsInterface.cpp.o:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o
+.PHONY : src/rosVinsInterface.cpp.o
+
+src/rosVinsInterface.i: src/rosVinsInterface.cpp.i
+
+.PHONY : src/rosVinsInterface.i
+
+# target to preprocess a source file
+src/rosVinsInterface.cpp.i:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.i
+.PHONY : src/rosVinsInterface.cpp.i
+
+src/rosVinsInterface.s: src/rosVinsInterface.cpp.s
+
+.PHONY : src/rosVinsInterface.s
+
+# target to generate assembly for a file
+src/rosVinsInterface.cpp.s:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.s
+.PHONY : src/rosVinsInterface.cpp.s
+
+src/vinsInfoFollow.o: src/vinsInfoFollow.cpp.o
+
+.PHONY : src/vinsInfoFollow.o
+
+# target to build an object file
+src/vinsInfoFollow.cpp.o:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.o
+.PHONY : src/vinsInfoFollow.cpp.o
+
+src/vinsInfoFollow.i: src/vinsInfoFollow.cpp.i
+
+.PHONY : src/vinsInfoFollow.i
+
+# target to preprocess a source file
+src/vinsInfoFollow.cpp.i:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.i
+.PHONY : src/vinsInfoFollow.cpp.i
+
+src/vinsInfoFollow.s: src/vinsInfoFollow.cpp.s
+
+.PHONY : src/vinsInfoFollow.s
+
+# target to generate assembly for a file
+src/vinsInfoFollow.cpp.s:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.s
+.PHONY : src/vinsInfoFollow.cpp.s
+
+src/vins_estimator/estimator.o: src/vins_estimator/estimator.cpp.o
+
+.PHONY : src/vins_estimator/estimator.o
+
+# target to build an object file
+src/vins_estimator/estimator.cpp.o:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o
+.PHONY : src/vins_estimator/estimator.cpp.o
+
+src/vins_estimator/estimator.i: src/vins_estimator/estimator.cpp.i
+
+.PHONY : src/vins_estimator/estimator.i
+
+# target to preprocess a source file
+src/vins_estimator/estimator.cpp.i:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.i
+.PHONY : src/vins_estimator/estimator.cpp.i
+
+src/vins_estimator/estimator.s: src/vins_estimator/estimator.cpp.s
+
+.PHONY : src/vins_estimator/estimator.s
+
+# target to generate assembly for a file
+src/vins_estimator/estimator.cpp.s:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.s
+.PHONY : src/vins_estimator/estimator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -484,20 +742,30 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... vins_node"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... test"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... depended_lib"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... rebuild_cache"
+	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... list_install_components"
+	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... edit_cache"
+	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... depended_lib"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
@@ -506,12 +774,24 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... src/feature/feature.o"
+	@echo "... src/feature/feature.i"
+	@echo "... src/feature/feature.s"
 	@echo "... src/parameters/parameters.o"
 	@echo "... src/parameters/parameters.i"
 	@echo "... src/parameters/parameters.s"
 	@echo "... src/rosNodeVins.o"
 	@echo "... src/rosNodeVins.i"
 	@echo "... src/rosNodeVins.s"
+	@echo "... src/rosVinsInterface.o"
+	@echo "... src/rosVinsInterface.i"
+	@echo "... src/rosVinsInterface.s"
+	@echo "... src/vinsInfoFollow.o"
+	@echo "... src/vinsInfoFollow.i"
+	@echo "... src/vinsInfoFollow.s"
+	@echo "... src/vins_estimator/estimator.o"
+	@echo "... src/vins_estimator/estimator.i"
+	@echo "... src/vins_estimator/estimator.s"
 .PHONY : help
 
 
