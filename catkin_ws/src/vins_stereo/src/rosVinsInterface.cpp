@@ -122,7 +122,11 @@ void rosVinsInterface::vinsProcess()
             cv::Mat left_image,right_image;
             if(syncImages(time,left_image,right_image))
             {
+                double start_count,end_count;
+                start_count = static_cast<double>(cv::getTickCount());
                 vins_sys->feature_manager->inputImage(time,left_image,right_image);
+                end_count = static_cast<double>(cv::getTickCount());
+                vinsInfo_record->img_info.track_cost_time = ((double)(end_count - start_count)/cv::getTickFrequency());
                 vinsInfo_record->img_info.trackImage_index++;
             }
         }

@@ -12,6 +12,7 @@ public:
     double para_imgInfo_print_period;
 private:
     double pre_print_time;
+
 };
 
 #endif // VINSINFOFOLLOW_H
