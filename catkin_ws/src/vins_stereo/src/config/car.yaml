@@ -7,8 +7,8 @@ right_image_topic:  "/cam1/image_raw"
 track_image_topic : "/track/image"
 
 stereo_enable:1
-feature_point_max_number:200
-feature_min_dist:0.1
+feature_point_max_number:150
+feature_min_dist:30
 pub_track_image:1
 
 

@@ -12,17 +12,21 @@ class Feature
 public:
     Feature(int max_pts,int min_dist,int pubTrackImage_flg);
     void inputImage(double t,const cv::Mat& left_img,const cv::Mat& right_img = cv::Mat());
-    void trackFeatureUsingFlowPyrLK(const cv::Mat& pre_image,vector<cv::Point2f>& pre_feature,const cv::Mat& cur_image,vector<cv::Point2f>& cur_feature);
+    void trackFeatureUsingFlowPyrLK();
     int getPubTrackFlg(){return flg_pubTrackImage;}
     void clearPubTrackFlg(){flg_pubTrackImage = 0;}
     cv::Mat getPubTrackImage(){return pubTrackImage;}
-
-
+    void setMask();
+    bool inBorder(const cv::Point2f &pt);
+    void reduceVector(vector<int>& vec,vector<unsigned char>& status);
+    void reduceVector(vector<cv::Point2f>& vec,vector<unsigned char>& status);
 private:
-    void updatePubTrackImage(const cv::Mat& img,vector<cv::Point2f>& pre_feature,vector<cv::Point2f>& cur_feature);
-
+    void updatePubTrackImage();
+    int cols,rows;
+    cv::Mat mask;
     cv::Mat cur_img,pre_img;
-    vector<cv::Point2f> pre_pts, cur_pts, n_pts;
+    vector<cv::Point2f> pre_pts, cur_pts;
+    vector<int> track_cnt;
     cv::Mat pubTrackImage;
     bool flg_pubTrackImage;
     queue<pair<double, map<int, vector<pair<int, Eigen::Matrix<double, 7, 1> > > > > > featureBuf;
