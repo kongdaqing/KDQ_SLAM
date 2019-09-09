@@ -9,6 +9,6 @@ fi
 }&
 sleep 2s
 {
-  gnome-terminal --tab -e 'bash -c "cd ~/Workspace/KDQ_SLAM/catkin_ws;source devel/setup.bash;rosrun vins_stereo vins_node ./src/vins_stereo/src/config/car.yaml"' --tab -e  'bash -c "cd ~/Workspace/SlamDatas/VINS;rosbag play car.bag"' --tab -e  "rosrun rviz rviz -d $1" 
-}
+  gnome-terminal --tab -e  'bash -c "cd ~/Workspace/KDQ_SLAM/catkin_ws;source devel/setup.bash;rosrun vins_stereo vins_node ./src/vins_stereo/src/config/car.yaml;exec bash"' --tab -e  'bash -c "cd ~/Workspace/SlamDatas/VINS;rosbag play car.bag"' --tab -e  "rosrun rviz rviz -d $1" 
+}&
 
