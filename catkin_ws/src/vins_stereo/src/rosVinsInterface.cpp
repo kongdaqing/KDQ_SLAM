@@ -137,7 +137,7 @@ void rosVinsInterface::vinsProcess()
             pubTrackImage(track_image,time_now);
             vins_sys->feature_manager->clearPubTrackFlg();
         }
-        vinsInfo_record->printImageInfo(time_now);
+        //vinsInfo_record->printImageInfo(time_now);
         std::chrono::milliseconds dura(20);
         std::this_thread::sleep_for(dura);
     }
