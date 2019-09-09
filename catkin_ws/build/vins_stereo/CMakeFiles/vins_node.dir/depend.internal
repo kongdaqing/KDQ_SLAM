@@ -6,6 +6,7 @@ vins_stereo/CMakeFiles/vins_node.dir/src/rosNodeVins.cpp.o
  /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
  /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosNodeVins.cpp
  /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.h
+ /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
  /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsDebugInfo.h
  /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.h
  /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.h

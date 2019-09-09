@@ -3,6 +3,7 @@
 
 vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.cpp
 vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
+vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cxcore.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d.hpp
 vins_stereo/CMakeFiles/depended_lib.dir/src/feature/feature.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d/calib3d_c.h
@@ -271,6 +272,7 @@ vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Wo
 vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.cpp
 vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.h
+vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsDebugInfo.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/rosVinsInterface.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.h
@@ -536,6 +538,7 @@ vins_stereo/CMakeFiles/depended_lib.dir/src/vinsInfoFollow.cpp.o: /opt/ros/kinet
 
 vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
+vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.cpp
 vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o: /home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.h
 vins_stereo/CMakeFiles/depended_lib.dir/src/vins_estimator/estimator.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cxcore.h
