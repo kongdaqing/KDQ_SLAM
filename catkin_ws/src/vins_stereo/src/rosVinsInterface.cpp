@@ -38,16 +38,16 @@ void rosVinsInterface::imu_callback(const sensor_msgs::ImuConstPtr &imu_msg)
 }
 void rosVinsInterface::leftImage_callback(const sensor_msgs::ImageConstPtr &image_msg)
 {
+    vinsInfo_record->img_info.leftImage_index++;
     vins_sys->image_lock.lock();
     img_left_buf.push(image_msg);
-    vinsInfo_record->img_info.leftImage_index++;
     vins_sys->image_lock.unlock();
 }
 void rosVinsInterface::rightImage_callback(const sensor_msgs::ImageConstPtr &image_msg)
 {
+    vinsInfo_record->img_info.rightImage_index++;
     vins_sys->image_lock.lock();
     img_right_buf.push(image_msg);
-    vinsInfo_record->img_info.rightImage_index++;
     vins_sys->image_lock.unlock();
 }
 
@@ -124,7 +124,9 @@ void rosVinsInterface::vinsProcess()
             {
                 double start_count,end_count;
                 start_count = static_cast<double>(cv::getTickCount());
+                vins_sys->image_lock.lock();
                 vins_sys->feature_manager->inputImage(time,left_image,right_image);
+                vins_sys->image_lock.unlock();
                 end_count = static_cast<double>(cv::getTickCount());
                 vinsInfo_record->img_info.track_cost_time = ((double)(end_count - start_count)/cv::getTickFrequency());
                 vinsInfo_record->img_info.trackImage_index++;
@@ -137,7 +139,7 @@ void rosVinsInterface::vinsProcess()
             pubTrackImage(track_image,time_now);
             vins_sys->feature_manager->clearPubTrackFlg();
         }
-        //vinsInfo_record->printImageInfo(time_now);
+        vinsInfo_record->printImageInfo(time_now);
         std::chrono::milliseconds dura(20);
         std::this_thread::sleep_for(dura);
     }

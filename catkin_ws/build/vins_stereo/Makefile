@@ -543,6 +543,21 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+vins_stereo/CMakeFiles/feature_node.dir/rule:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/feature_node.dir/rule
+.PHONY : vins_stereo/CMakeFiles/feature_node.dir/rule
+
+# Convenience name for target.
+feature_node: vins_stereo/CMakeFiles/feature_node.dir/rule
+
+.PHONY : feature_node
+
+# fast build rule for target.
+feature_node/fast:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/feature_node.dir/build.make vins_stereo/CMakeFiles/feature_node.dir/build
+.PHONY : feature_node/fast
+
+# Convenience name for target.
 vins_stereo/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vins_stereo/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : vins_stereo/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
@@ -606,6 +621,7 @@ src/parameters/parameters.o: src/parameters/parameters.cpp.o
 # target to build an object file
 src/parameters/parameters.cpp.o:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.o
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/feature_node.dir/build.make vins_stereo/CMakeFiles/feature_node.dir/src/parameters/parameters.cpp.o
 .PHONY : src/parameters/parameters.cpp.o
 
 src/parameters/parameters.i: src/parameters/parameters.cpp.i
@@ -615,6 +631,7 @@ src/parameters/parameters.i: src/parameters/parameters.cpp.i
 # target to preprocess a source file
 src/parameters/parameters.cpp.i:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.i
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/feature_node.dir/build.make vins_stereo/CMakeFiles/feature_node.dir/src/parameters/parameters.cpp.i
 .PHONY : src/parameters/parameters.cpp.i
 
 src/parameters/parameters.s: src/parameters/parameters.cpp.s
@@ -624,7 +641,35 @@ src/parameters/parameters.s: src/parameters/parameters.cpp.s
 # target to generate assembly for a file
 src/parameters/parameters.cpp.s:
 	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/depended_lib.dir/build.make vins_stereo/CMakeFiles/depended_lib.dir/src/parameters/parameters.cpp.s
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/feature_node.dir/build.make vins_stereo/CMakeFiles/feature_node.dir/src/parameters/parameters.cpp.s
 .PHONY : src/parameters/parameters.cpp.s
+
+src/rosFeatureTest.o: src/rosFeatureTest.cpp.o
+
+.PHONY : src/rosFeatureTest.o
+
+# target to build an object file
+src/rosFeatureTest.cpp.o:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/feature_node.dir/build.make vins_stereo/CMakeFiles/feature_node.dir/src/rosFeatureTest.cpp.o
+.PHONY : src/rosFeatureTest.cpp.o
+
+src/rosFeatureTest.i: src/rosFeatureTest.cpp.i
+
+.PHONY : src/rosFeatureTest.i
+
+# target to preprocess a source file
+src/rosFeatureTest.cpp.i:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/feature_node.dir/build.make vins_stereo/CMakeFiles/feature_node.dir/src/rosFeatureTest.cpp.i
+.PHONY : src/rosFeatureTest.cpp.i
+
+src/rosFeatureTest.s: src/rosFeatureTest.cpp.s
+
+.PHONY : src/rosFeatureTest.s
+
+# target to generate assembly for a file
+src/rosFeatureTest.cpp.s:
+	cd /home/kdq/Workspace/KDQ_SLAM/catkin_ws/build && $(MAKE) -f vins_stereo/CMakeFiles/feature_node.dir/build.make vins_stereo/CMakeFiles/feature_node.dir/src/rosFeatureTest.cpp.s
+.PHONY : src/rosFeatureTest.cpp.s
 
 src/rosNodeVins.o: src/rosNodeVins.cpp.o
 
@@ -772,6 +817,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... feature_node"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... src/feature/feature.o"
@@ -780,6 +826,9 @@ help:
 	@echo "... src/parameters/parameters.o"
 	@echo "... src/parameters/parameters.i"
 	@echo "... src/parameters/parameters.s"
+	@echo "... src/rosFeatureTest.o"
+	@echo "... src/rosFeatureTest.i"
+	@echo "... src/rosFeatureTest.s"
 	@echo "... src/rosNodeVins.o"
 	@echo "... src/rosNodeVins.i"
 	@echo "... src/rosNodeVins.s"

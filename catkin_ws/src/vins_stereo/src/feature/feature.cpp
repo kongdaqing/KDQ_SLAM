@@ -53,7 +53,6 @@ void Feature::updatePubTrackImage()
     {
        double len = std::min(1.0, 1.0 * track_cnt[j] / 20);
         cv::circle(pubTrackImage, cur_pts[j], 2, cv::Scalar(255 * (1 - len), 0, 255 * len), 2);
-       // cv::line(pubTrackImage,pre_pts[j],cur_pts[j],cv::Scalar(255, 0, 0), 2);
     }
     flg_pubTrackImage = 1;
 }
@@ -124,8 +123,6 @@ void Feature::trackFeatureUsingFlowPyrLK()
         if(status[i] == 1 && !inBorder(cur_pts[i]))
             status[i] = 0;
 
-
-
     reduceVector(cur_pts,status);
     reduceVector(pre_pts,status);
     reduceVector(track_cnt,status);
@@ -133,17 +130,19 @@ void Feature::trackFeatureUsingFlowPyrLK()
     for(auto &p:track_cnt)
         p++;
     setMask();
-    cout << "track size: " << cur_pts.size() << endl;
+    //cout << "track size: " << cur_pts.size() << endl;
 
     if(cur_pts.size() < para_maxPtsNumber)
         cv::goodFeaturesToTrack(cur_img,n_pts,para_maxPtsNumber - cur_pts.size(),0.01f,para_minDist,mask);
-
+    else
+        n_pts.clear();
+    //cout << "n_pts: " << n_pts.size() << endl;
     for(auto &index:n_pts)
     {
         cur_pts.push_back(index);
         track_cnt.push_back(1);
     }
-    n_pts.clear();
+
 
 
 

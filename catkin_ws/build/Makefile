@@ -610,6 +610,19 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named feature_node
+
+# Build rule for target.
+feature_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 feature_node
+.PHONY : feature_node
+
+# fast build rule for target.
+feature_node/fast:
+	$(MAKE) -f vins_stereo/CMakeFiles/feature_node.dir/build.make vins_stereo/CMakeFiles/feature_node.dir/build
+.PHONY : feature_node/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
@@ -682,6 +695,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... feature_node"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 .PHONY : help

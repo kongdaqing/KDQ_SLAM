@@ -26,3 +26,7 @@ add_executable(vins_node src/rosNodeVins.cpp)
 
 target_link_libraries(vins_node ${catkin_LIBRARIES} depended_lib)
 
+add_executable(feature_node src/rosFeatureTest.cpp
+   src/parameters/parameters.cpp
+ )
+target_link_libraries(feature_node ${catkin_LIBRARIES} ${OpenCV_LIBS})

@@ -225,6 +225,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "vins_stereo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake"
   "vins_stereo/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "vins_stereo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
+  "vins_stereo/CMakeFiles/feature_node.dir/DependInfo.cmake"
   "vins_stereo/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake"
   "vins_stereo/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
   )
