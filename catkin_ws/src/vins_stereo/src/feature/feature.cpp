@@ -94,40 +94,58 @@ void Feature::setMask()
 
 void Feature::trackFeatureUsingFlowPyrLK()
 {
+    static int cnt = 0;
+    static double sum_time = 0;
+    cnt++;
+
     cur_pts.clear();
     if(pre_pts.size() == 0)
     {
+        cout << "intialize track!" << endl;
         cv::goodFeaturesToTrack(cur_img,cur_pts,para_maxPtsNumber,0.01f,para_minDist);
         for(unsigned int i=0;i<cur_pts.size();i++)
             track_cnt.push_back(1);
         return;
     }
 
-    vector<unsigned char> status;
+    vector<uchar> status;
     vector<float> err;
+    TicToc time_cost;
     cv::calcOpticalFlowPyrLK(pre_img,cur_img,pre_pts,cur_pts,status,err,cv::Size(21,21),3);
+    sum_time += time_cost.toc();
+    if(cnt == 30)
+    {
+        cout << " track image feature cost: " << sum_time/cnt << "ms" << endl;
+        cnt = 0;
+        sum_time = 0;
+    }
 
     for(unsigned int i=0;i<status.size();i++)
         if(status[i] == 1 && !inBorder(cur_pts[i]))
             status[i] = 0;
 
 
+
     reduceVector(cur_pts,status);
     reduceVector(pre_pts,status);
     reduceVector(track_cnt,status);
+
     for(auto &p:track_cnt)
         p++;
     setMask();
+    cout << "track size: " << cur_pts.size() << endl;
 
-    vector<cv::Point2f> pts;
     if(cur_pts.size() < para_maxPtsNumber)
-        cv::goodFeaturesToTrack(cur_img,pts,para_maxPtsNumber - cur_pts.size(),0.01f,para_minDist,mask);
+        cv::goodFeaturesToTrack(cur_img,n_pts,para_maxPtsNumber - cur_pts.size(),0.01f,para_minDist,mask);
 
-    for(auto &index:pts)
+    for(auto &index:n_pts)
     {
         cur_pts.push_back(index);
         track_cnt.push_back(1);
     }
+    n_pts.clear();
+
+
 
     if(para_pubTrackImageFlg)
     {
@@ -140,7 +158,9 @@ void Feature::inputImage(double t,const cv::Mat& left_img,const cv::Mat& right_i
     cur_img = left_img;
     cols = cur_img.cols;
     rows = cur_img.rows;
+
     trackFeatureUsingFlowPyrLK();
+
     pre_img = cur_img;
     pre_pts = cur_pts;
 }

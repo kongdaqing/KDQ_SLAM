@@ -5,6 +5,7 @@
 #include <queue>
 #include <eigen3/Eigen/Core>
 #include <opencv2/opencv.hpp>
+#include "../tools/tic_toc.h"
 using namespace std;
 
 class Feature
@@ -25,7 +26,7 @@ private:
     int cols,rows;
     cv::Mat mask;
     cv::Mat cur_img,pre_img;
-    vector<cv::Point2f> pre_pts, cur_pts;
+    vector<cv::Point2f> pre_pts, cur_pts,n_pts;
     vector<int> track_cnt;
     cv::Mat pubTrackImage;
     bool flg_pubTrackImage;
