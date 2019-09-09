@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/vins_stereo/feature_node"
-  "/home/kdq/Workspace/KDQ_SLAM/catkin_ws/devel/lib/vins_stereo/feature_node.pdb"
-  "CMakeFiles/feature_node.dir/src/parameters/parameters.cpp.o"
   "CMakeFiles/feature_node.dir/src/rosFeatureTest.cpp.o"
+  "CMakeFiles/feature_node.dir/src/parameters/parameters.cpp.o"
+  "/home/kdq/workspace/KDQ_SLAM/catkin_ws/devel/lib/vins_stereo/feature_node.pdb"
+  "/home/kdq/workspace/KDQ_SLAM/catkin_ws/devel/lib/vins_stereo/feature_node"
 )
 
 # Per-language clean rules from dependency scanning.

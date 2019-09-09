@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
 vector
 -
 map
@@ -18,9 +18,13 @@ eigen3/Eigen/Core
 opencv2/opencv.hpp
 -
 ../tools/tic_toc.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.cpp
+parameters.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
+
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
 iostream
 -
 opencv2/opencv.hpp
@@ -28,15 +32,15 @@ opencv2/opencv.hpp
 fstream
 -
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosFeatureTest.cpp
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosFeatureTest.cpp
 iostream
 -
 ros/ros.h
 -
 feature/feature.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
 parameters/parameters.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
 sensor_msgs/Image.h
 -
 sensor_msgs/image_encodings.h
@@ -49,8 +53,10 @@ queue
 -
 opencv2/opencv.hpp
 -
+tools/tic_toc.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
 ctime
 -
 cstdlib

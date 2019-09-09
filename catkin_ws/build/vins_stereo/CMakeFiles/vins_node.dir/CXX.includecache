@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
 vector
 -
 map
@@ -18,9 +18,9 @@ eigen3/Eigen/Core
 opencv2/opencv.hpp
 -
 ../tools/tic_toc.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
 iostream
 -
 opencv2/opencv.hpp
@@ -28,17 +28,17 @@ opencv2/opencv.hpp
 fstream
 -
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosNodeVins.cpp
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosNodeVins.cpp
 iostream
 -
 ros/ros.h
 -
 parameters/parameters.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
 rosVinsInterface.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.h
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosVinsInterface.h
 ros/ros.h
 -
 sensor_msgs/Imu.h
@@ -50,15 +50,15 @@ sensor_msgs/image_encodings.h
 cv_bridge/cv_bridge.h
 -
 parameters/parameters.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
 vins_estimator/estimator.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.h
 vinsInfoFollow.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.h
 thread
 -
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/tools/tic_toc.h
 ctime
 -
 cstdlib
@@ -66,15 +66,15 @@ cstdlib
 chrono
 -
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsDebugInfo.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsDebugInfo.h
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsInfoFollow.h
 vinsDebugInfo.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsDebugInfo.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vinsDebugInfo.h
 ros/ros.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/ros/ros.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/ros/ros.h
 
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/vins_estimator/estimator.h
 queue
 -
 eigen3/Eigen/Core
@@ -82,9 +82,9 @@ eigen3/Eigen/Core
 opencv2/opencv.hpp
 -
 ../parameters/parameters.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/parameters/parameters.h
 ../feature/feature.h
-/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
+/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/feature/feature.h
 mutex
 -
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kdq/Workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosNodeVins.cpp" "/home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo/CMakeFiles/vins_node.dir/src/rosNodeVins.cpp.o"
+  "/home/kdq/workspace/KDQ_SLAM/catkin_ws/src/vins_stereo/src/rosNodeVins.cpp" "/home/kdq/workspace/KDQ_SLAM/catkin_ws/build/vins_stereo/CMakeFiles/vins_node.dir/src/rosNodeVins.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -25,7 +25,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kdq/Workspace/KDQ_SLAM/catkin_ws/build/vins_stereo/CMakeFiles/depended_lib.dir/DependInfo.cmake"
+  "/home/kdq/workspace/KDQ_SLAM/catkin_ws/build/vins_stereo/CMakeFiles/depended_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
