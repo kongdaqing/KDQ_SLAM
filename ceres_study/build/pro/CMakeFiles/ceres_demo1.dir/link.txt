@@ -1,1 +1,0 @@
-/usr/bin/g++-5      CMakeFiles/ceres_demo1.dir/main.cpp.o  -o ceres_demo1 -rdynamic -lcere_demo 

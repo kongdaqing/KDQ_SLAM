@@ -1,8 +1,0 @@
-prefix=/home/kdq/workspace/KDQ_SLAM/opencv_study/devel
-
-Name: feature_detector
-Description: Description of feature_detector
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/kdq/workspace/KDQ_SLAM/opencv_study/devel/lib 
-Requires: 

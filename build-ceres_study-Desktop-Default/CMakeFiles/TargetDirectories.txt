@@ -1,4 +1,0 @@
-/home/kdq/workspace/KDQ_SLAM/build-ceres_study-Desktop-Default/CMakeFiles/rebuild_cache.dir
-/home/kdq/workspace/KDQ_SLAM/build-ceres_study-Desktop-Default/CMakeFiles/edit_cache.dir
-/home/kdq/workspace/KDQ_SLAM/build-ceres_study-Desktop-Default/CMakeFiles/ceres_demo2.dir
-/home/kdq/workspace/KDQ_SLAM/build-ceres_study-Desktop-Default/CMakeFiles/ceres_demo1.dir
