@@ -144,6 +144,12 @@ CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 CMAKE_PREFIX_PATH:STRING=/usr
 
 //Value Computed by CMake
+CMAKE_PROJECT_DESCRIPTION:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
+
+//Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=eigen_study
 
 //Path to a program.
@@ -212,6 +218,9 @@ Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 
 //Path to a program.
+ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
+
+//Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
 //No help, variable specified on the command line.
@@ -235,9 +244,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/zx/workspace/KDQ_SLAM_ws/src/KDQ_SLAM/build-e
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=12
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=15
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=4
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/local/bin/cmake
 //Path to cpack program executable.
@@ -340,7 +349,7 @@ CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/local/share/cmake-3.12
+CMAKE_ROOT:INTERNAL=/usr/local/share/cmake-3.15
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -373,6 +382,8 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_getconf
 ProcessorCount_cmd_getconf-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_nproc
+ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 
